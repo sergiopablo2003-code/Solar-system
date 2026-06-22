@@ -77,7 +77,7 @@ while t_c < tf:
 
 
 labels=["Sol", "Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno" ] #etiquetamos los planetas
-"""""
+
 for n in range(0,len(x)):
     plt.plot(P_x[:,n],P_y[:,n],label=labels[n])
 
@@ -87,11 +87,11 @@ plt.ylabel("Posición Y (AU)")
 plt.title("Orbitas planetas")
 plt.legend()
 plt.show()
-"""""
 
 
 
-"""""
+
+
 #Para la creación del GIF
 def update_plot(frame):
     
@@ -111,7 +111,7 @@ fig, ax = plt.subplots()
 ani = animation.FuncAnimation(fig, update_plot, frames=T_gif, interval=50)
 ani.save('planets_movement.gif', writer='pillow')
 plt.show()
-"""""
+
 
 
 #Calculo del periodo orbital de cada planeta
